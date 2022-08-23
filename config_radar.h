@@ -2,7 +2,7 @@
 #define CONFIG_RADAR_H
 
 /*
-PARAMS: path to port, char pointer to file name
+PARAMS: path to port
 config radar -> send the settings located on CONFIGURATIONS to the radar
 RETURN VALUE: 
     SUCCES: STATUS_OK 

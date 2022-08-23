@@ -89,7 +89,7 @@ int readline(char *line, FILE *fp, bool *end_of_file)
     line[index + 1] = '\0';
 
     *end_of_file = false;
-    
+
     return STATUS_OK;
 }
 
@@ -99,8 +99,8 @@ PARAMS: char pointer to line buffer,file pointer, bool pointer to store if fp re
 read config file line by line and store the lines pointers array at lines_pointer
 ~ inner malloc lines array ~
 ~ inner malloc every line ~
-RETURN VALUE: 
-    SUCCES: STATUS_OK 
+RETURN VALUE:
+    SUCCES: STATUS_OK
     FAILURE: PARAMETER_NOT_VALID, CANNOT_OPEN_FILE, CANNOT_CLOSE_FILE, CANNOT_ALLOCATE_MEMORY
 */
 int get_config_file_by_lines(char *config_file_path,char *** lines_pointer)
@@ -183,7 +183,7 @@ int dispose_config_file(char **lines)
 }
 
 /*
-PARAMS: path to port, char pointer to file name
+PARAMS: path to port
 config radar -> send the settings located on CONFIGURATIONS to the radar
 RETURN VALUE: 
     SUCCES: STATUS_OK 
